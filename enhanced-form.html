@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Assignment</title>
+    <style>
+        body { font-family: sans-serif; margin: 15px; }
+        section { margin-bottom: 25px; padding: 15px; border: 1px solid #ddd; }
+        h1, h2 { color: #333; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #eee; padding: 6px; text-align: left; }
+        th { background-color: #f5f5f5; }
+        form { padding: 15px; background-color: #f9f9f9; }
+        fieldset { border: 1px solid #ccc; padding: 10px; margin-bottom: 15px; }
+        legend { font-weight: bold; padding: 0 5px; }
+        label { display: block; margin-bottom: 3px; font-weight: bold; }
+        input[type="text"], input[type="email"], input[type="password"],
+        input[type="url"], input[type="tel"], input[type="number"],
+        input[type="date"], input[type="color"], select, textarea {
+            width: calc(100% - 20px); padding: 8px; margin-bottom: 10px; border: 1px solid #bbb; }
+        input[type="radio"], input[type="checkbox"] { margin-right: 5px; }
+        input[type="submit"] { background-color: #007bff; color: white; padding: 8px 15px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>Web Features Showcase</h1>
+
+    <section>
+        <h2>Content Elements</h2>
+        <h3>My To-Do List</h3>
+        <ul>
+            <li>Finish HTML structure</li>
+            <li>Add form validation</li>
+            <li>Submit assignment</li>
+        </ul>
+
+        <h3>Weekly Schedule</h3>
+        <table>
+            <thead>
+                <tr><th>Day</th><th>Task</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Monday</td><td>Code Review</td></tr>
+                <tr><td>Tuesday</td><td>Plan Next Steps</td></tr>
+            </tbody>
+        </table>
+
+        <h3>Site Logo</h3>
+        <img src=https://images.pexels.com/photos/136320/pexels-photo-136320.jpeg alt="Close-up of a MacBook Pro laptop" width="500" height="350">
+    </section>
+
+    <section>
+        <h2>User Feedback Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Your Details</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" autocomplete="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="user@example.com" autocomplete="email" required>
+
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd" minlength="6" maxlength="12" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" min="1950-01-01" max="2006-12-31" required>
+
+                <label for="url">Your URL:</label>
+                <input type="url" id="url" name="url" placeholder="https://yourpage.com">
+
+                <label for="phone">Phone (123-456-7890):</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890" required>
+
+                <label for="age">Age (18-99):</label>
+                <input type="number" id="age" name="age" min="18" max="99" required>
+
+                <label for="favColor">Favorite Color:</label>
+                <input type="color" id="favColor" name="favColor" value="#ff0000">
+
+                <label for="note">Read-only Note:</label>
+                <input type="text" id="note" name="note" value="This is a read-only field." readonly>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <p>Rating (1-5):</p>
+                <input type="radio" id="rating1" name="rating" value="1" required><label for="rating1">1</label>
+                <input type="radio" id="rating3" name="rating" value="3" checked><label for="rating3">3</label>
+                <input type="radio" id="rating5" name="rating" value="5"><label for="rating5">5</label>
+
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="3" placeholder="Your comments here..." required></textarea>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+</body>
+</html>
